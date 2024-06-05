@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.display {
+  background-color: #eee;
+  height: 100px;
+  width: 350px;
+  border: 2px solid #666;
+}
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: solid 1px #000;
+  width: 350px;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.btn-container button {
+  padding: 30px;
+  font-size: 18px;
+}
