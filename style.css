@@ -12,8 +12,12 @@
 .display {
   background-color: #eee;
   height: 100px;
-  width: 350px;
+  width: 360px;
+  padding-top: 20px;
+  padding-right: 20px;
   border: 2px solid #666;
+  text-align: right;
+  font-size: 32px;
 }
 
 .btn-container {
@@ -21,12 +25,12 @@
   flex-wrap: wrap;
   justify-content: center;
   border: solid 1px #000;
-  width: 350px;
-  gap: 10px;
+  width: 360px;
+  gap: 6px;
   padding-top: 10px;
 }
 
 .btn-container button {
-  padding: 30px;
+  padding: calc(360px / 13);
   font-size: 18px;
 }
