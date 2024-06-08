@@ -16,6 +16,9 @@ document.addEventListener("click", (e) => {
     if (buttonValue === "AC") {
       operation = "";
       display.textContent = 0;
+    } else if (buttonValue === "C") {
+      operation = operation.slice(0, -1);
+      display.textContent = operation;
     } else if (buttonValue === "=") {
       performCalculation();
     } else {
@@ -26,6 +29,7 @@ document.addEventListener("click", (e) => {
 });
 
 const performCalculation = () => {
+  console.log(operation);
   if (operation.length) {
     let operator = Object.keys(operators).find((op) => operation.includes(op));
     if (operator) {
@@ -46,7 +50,7 @@ const performCalculation = () => {
   }
 };
 
-//LEGACY CODE
+//LEGACY IMPLEMENTATION
 // btns.forEach((btn) =>
 //   btn.addEventListener("click", (e) => {
 //     if (e.target.textContent === "AC") {
