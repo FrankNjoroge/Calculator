@@ -44,14 +44,10 @@
   border-radius: 20px;
   background-color: #343439;
   color: #fff;
-  cursor: pointer;
 }
 
 .btn-container button:hover {
   background-color: #676768;
-}
-.btn-container button:active {
-  background-color: #868687;
 }
 
 button[type="submit"] {
