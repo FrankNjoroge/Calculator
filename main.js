@@ -1,5 +1,10 @@
-const display = document.querySelector(".display");
-const operatorBtns = document.querySelectorAll(".operator");
-const numBtns = document.querySelectorAll(".num");
-const clearAll = document.querySelector(".clear-all");
-const clear = document.querySelector(".clear");
+// functions for math operations
+const add = (a, b) => a + b;
+const subtract = (a, b) => a - b;
+const multiply = (a, b) => a * b;
+const divide = (a, b) => a / b;
+
+//operation variables
+let firstOperand = "";
+let operator = "";
+let secondOperand = "";
